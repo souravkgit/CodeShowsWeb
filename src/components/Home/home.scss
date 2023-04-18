@@ -1,0 +1,106 @@
+.Myhome {
+  height: auto;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  min-width: 350px;
+  .MyHomeContainer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #2f2e2e;
+    .MyLogoDescription {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      width: 100%;
+      // padding: 4px;
+      .MyHomeLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: auto;
+        background-size: 500px auto;
+        .HomeLogo {
+          // width: fit-content;
+          height: 400px;
+          width: auto;
+        }
+      }
+      .HomeDescription {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(192, 192, 192);
+        letter-spacing: 2px;
+        font-size: 18px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+      .HomeAbout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(159, 159, 159);
+        letter-spacing: 2px;
+        font-size: 14px;
+        font-weight: lighter;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .Myhome {
+    width: 100vw;
+    .MyHomeContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .MyLogoDescription {
+        width: 80%;
+        .MyHomeLogo {
+          height: 220px;
+          width: auto;
+          background-size: 220px auto;
+          .HomeLogo {
+            height: 220px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .Myhome {
+    position: relative;
+    min-width: 350px;
+    width: 100vw;
+    .MyHomeContainer {
+      width: 350px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      min-width: 350px;
+      .MyLogoDescription {
+        width: 100%;
+        .MyHomeLogo {
+          height: 150px;
+          width: auto;
+          background-size: 150px auto;
+          .HomeLogo {
+            height: 150px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}

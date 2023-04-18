@@ -1,0 +1,128 @@
+.Myhome {
+  height: 100vh;
+  // min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow-y: scroll;
+  min-width: 350px;
+  .MyHomeContainer {
+    // padding-top: 5px;
+    // padding-bottom: 5px;
+    background-color: #2f2e2e;
+    height: auto;
+    .MyLogoDescription {
+      // height: 100vh;
+      // overflow-x: scroll;
+      // overflow-y: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      width: 100%;
+      // padding: 4px;
+      .MyHomeLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: auto;
+        background-size: 500px auto;
+        .HomeLogo {
+          // width: fit-content;
+          height: 400px;
+          width: auto;
+        }
+      }
+      .HomeDescription {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(192, 192, 192);
+        letter-spacing: 2px;
+        font-size: 18px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+      .HomeAbout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(159, 159, 159);
+        letter-spacing: 2px;
+        font-size: 14px;
+        font-weight: lighter;
+        text-align: center;
+      }
+      .MyLSButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        min-width: 350px;
+        height: auto;
+        // padding: 4px;
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .Myhome {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    .MyHomeContainer {
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .MyLogoDescription {
+        width: 100%;
+        .MyHomeLogo {
+          height: 220px;
+          width: auto;
+          background-size: 220px auto;
+          .HomeLogo {
+            height: 220px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .Myhome {
+    height: calc(100vh + 15px);
+    overflow-y: scroll;
+    position: relative;
+    min-width: 350px;
+    .MyHomeContainer {
+      height: fit-content;
+      min-height: 100vh;
+      width: 350px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      min-width: 350px;
+      .MyLogoDescription {
+        width: 100%;
+        min-height: 100vh;
+        .MyHomeLogo {
+          height: 150px;
+          width: auto;
+          background-size: 150px auto;
+          .HomeLogo {
+            height: 150px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}

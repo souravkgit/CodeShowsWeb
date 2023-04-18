@@ -1,0 +1,26 @@
+.HeaderLogo{
+  height: 40px;
+  width: 40px;
+}
+
+.MyLogo{
+  display: flex;
+  gap: 1rem;
+}
+.navbar{
+  min-width: 350px;
+  position: absolute;
+  width: 100%;
+  flex-wrap: nowrap;
+  padding: 10px;
+  height: 80px;
+  background-color: ghostwhite;
+}
+
+@media (max-width: 1199.98px){
+.navbar-expand-xl > .container, .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-xl {
+  // padding-right: 10px;
+  // padding-left: 0;
+  padding: 10px;
+  flex-wrap: nowrap;
+}}
